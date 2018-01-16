@@ -15,5 +15,5 @@ JavaScript is one of the most commonly used programming languages in the world o
     * No description for now
 
 
-<p align="right">This course is provided by: <a href="http://www.softuni.bg">Software University</a> <img width="15%" src="~/misc/softuni-code-wizard.png"></p>
+<p align="right">This course is provided by: <a href="http://www.softuni.bg">Software University</a> <img width="15%" src="/misc/softuni-code-wizard.png"></p>
     
