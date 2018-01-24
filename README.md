@@ -10,10 +10,10 @@ JavaScript is one of the most commonly used programming languages in the world o
      The course is not suitable for beginners. Initial programming  skills (data handling, checks, iterations) are required,  regardless of the programming language and at least basic  knowledge of the HTML language.
 
 * ### JS Advanced - February 2018
-    * No description for now
+    * No description...
 * ### JS Applications - March 2018
-    * No description for now
+    * No description...
 
 
-<p align="right">This course is provided by: <a href="http://www.softuni.bg">Software University</a> <img width="15%" src="~/misc/softuni-code-wizard.png"></p>
+<p align="right">This course is provided by: <a href="http://www.softuni.bg">Software University</a> <img width="15%" src="/misc/softuni-code-wizard.png"></p>
     
