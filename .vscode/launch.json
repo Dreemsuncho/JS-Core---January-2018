@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${file}"
+            "program": "${workspaceFolder}/JS Fundamentals/Exam - 18 June 2017/04. Galactic Elections/solution.js"
         }
     ]
 }

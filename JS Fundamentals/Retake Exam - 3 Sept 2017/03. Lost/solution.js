@@ -1,5 +1,4 @@
-
-function lost(keyword, text) {
+function solve(keyword, text) {
     const msgRegex = new RegExp(`${keyword}(.*)${keyword}`)
     const northEastRegex = /(north|east)\D*(\d{2})[^,]*,\D*(\d{6})/img;
 

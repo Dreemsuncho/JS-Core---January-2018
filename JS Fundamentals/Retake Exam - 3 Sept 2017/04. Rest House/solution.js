@@ -1,5 +1,4 @@
-
-function restHouse(inputRooms, guests) {
+function solve(inputRooms, guests) {
     const roomDouble = "double-bedded"
     const roomTriple = "triple"
 

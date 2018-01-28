@@ -1,4 +1,4 @@
-function expedition(primaryMap, secondaryMap, overlayCoords, startCoord) {
+function solve(primaryMap, secondaryMap, overlayCoords, startCoord) {
     let primaryRowLen = primaryMap.length
     let primaryColLen = primaryMap[0].length
 

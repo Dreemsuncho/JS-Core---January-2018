@@ -1,4 +1,4 @@
-function hungryProgrammer(meals, commands) {
+function solve(meals, commands) {
 
     // helper function
     let utilFuncs = { isNumbersValid: (num1, num2) => !(isNaN(num1) || isNaN(num1)) }
