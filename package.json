@@ -1,0 +1,12 @@
+{
+  "name": "js-core---january-2018",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha  \"JS Advanced/**/*.js\""
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "jquery": "^3.3.1",
+    "mocha": "^5.0.1"
+  }
+}
