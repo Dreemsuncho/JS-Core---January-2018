@@ -1,8 +1,10 @@
 {
+  "_comment": "mocha  \"JS Advanced/**/*.js\"",
+
   "name": "js-core---january-2018",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha  \"JS Advanced/**/*.js\""
+    "test": "mocha  \"JS Advanced/JS Advanced Exam - 19 Dec 2016/**/*.js\""
   },
   "dependencies": {
     "chai": "^4.1.2",
