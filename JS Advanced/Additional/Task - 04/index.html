@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Overlay</title>
+    <style>
+        .overlay {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .dialog {
+            border: 1px solid black;
+            background: #eeeeee;
+            display: inline-block;
+            margin: 40vh auto;
+            padding: 1em 3em;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Modal Dialog Overlay</h1>
+    <button onclick="spawnConfirm()">Create OK/Cancel</button>
+    <button onclick="spawnInput()">Create Input</button>
+    <textarea style="resize: none; display: block; width: 300px; height: 200px" disabled id="output"></textarea>
+    
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./solution.js"></script>
+    <script src="./utils.js"></script>
+</body>
+
+</html>
