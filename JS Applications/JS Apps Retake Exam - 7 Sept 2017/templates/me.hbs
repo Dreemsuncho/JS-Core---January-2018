@@ -1,0 +1,40 @@
+{{> header }}
+{{> menu }}
+
+<section id="viewMe">
+    <div class="content">
+
+        <div class="chirper">
+            <h2 class="titlebar">{{ username }}</h2>
+
+            {{#if isLoggedUser }}
+                <form id="formSubmitChirpMy" class="chirp-form" action="#/chirp" method="POST">
+                    <textarea name="text" class="chirp-input"></textarea>
+                    <input class="chirp-submit" id="btnSubmitChirpMy" value="Chirp" type="submit">
+                </form>
+            {{else}}
+                    {{#if hasFollow}}
+                        <form id="formSubmitFollow" action="#/unfollow/{{ username }}" method="GET">
+                            <input id="btnSubmitFollow" class="follow-submit" value="Unfollow" type="submit">
+                        </form>
+                    {{else}}
+                        <form id="formSubmitFollow" action="#/follow/{{ username }}" method="GET">
+                            <input id="btnSubmitFollow" class="follow-submit" value="Follow" type="submit">
+                        </form>
+                    {{/if}}
+            {{/if}}
+
+            <div id="myStats" class="user-details">
+                <span>{{ chirpsCount }} chirps</span> |
+                <span>{{ followingCount }} following</span> |
+                <span>{{ followersCount }} followers</span>
+            </div>
+        </div>
+
+        <div id="myChirps" class="chirps">
+            {{> chirps }}
+        </div>
+    </div>
+</section>
+
+{{> footer }}

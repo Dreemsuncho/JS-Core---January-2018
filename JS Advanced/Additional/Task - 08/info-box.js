@@ -82,4 +82,3 @@ contact.render('main');
 
 let element = $('#main').find('article');
 let title = element.find('.title');
-console.log(title.hasClass('online'))

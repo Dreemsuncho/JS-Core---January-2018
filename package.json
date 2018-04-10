@@ -1,9 +1,9 @@
 {
-  "_comment": "mocha  \"JS Advanced/**/*.js\"",
   "name": "js-core---january-2018",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha  \"JS Advanced/Additional/**/*.js\""
+    "hbs": "handlebars \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/partials/chirps.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/discover.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/feed.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/login.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/me.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/menu.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/profile.hbs\" \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/register.hbs\" -f \"JS Applications/JS Apps Retake Exam - 7 Sept 2017/templates/result.js\"",
+    "test": "mocha  \"JS Advanced/Exam/Problem - 2/**/*.js\""
   },
   "dependencies": {
     "chai": "^4.1.2",
@@ -12,3 +12,4 @@
     "sinon": "^4.4.6"
   }
 }
+
