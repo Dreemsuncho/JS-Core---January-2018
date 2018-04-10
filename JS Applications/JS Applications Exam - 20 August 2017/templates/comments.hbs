@@ -1,0 +1,56 @@
+<section id="viewComments">
+    <div class="post">
+        <div class="col thumbnail">
+            <a href="{{ post.url }}">
+                <img src="{{ post.imageUrl }}">
+            </a>
+        </div>
+        <div class="post-content">
+            <div class="title">
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </div>
+            <div class="details">
+                <p>{{ post.description }}</p>
+                <div class="info">
+                    submitted {{ post.time }} ago by {{ post.author }}
+                </div>
+                <div class="controls">
+                    <ul>
+                        <li class="action">
+                            <a class="editLink" href="#/posts/{{ post._id }}/edit">edit</a>
+                        </li>
+                        <li class="action">
+                            <a class="deleteLink" href="#/posts/{{ post._id }}/delete">delete</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="post post-content">
+        <form id="commentForm" action="#/posts/{{ post._id }}/comments/new" method="POST">
+            <label>Comment</label>
+            <textarea name="content" type="text"></textarea>
+            <input type="submit" value="Add Comment" id="btnPostComment">
+        </form>
+    </div>
+
+    {{#if comments}}
+    {{#each comments}}
+    <article class="post post-content">
+        <p>{{ content }}</p>
+        <div class="info">
+            submitted {{ time }} ago by {{ author }} {{#if isAuthor }}|
+            <a href="#/posts/{{ ../post._id }}/comments/{{ _id }}/delete" class="deleteLink">delete</a>{{/if}}
+        </div>
+    </article>
+    {{/each}}
+    {{else}}
+    <div class="clear">No comments yet.</div>
+    {{/if}}
+</section>

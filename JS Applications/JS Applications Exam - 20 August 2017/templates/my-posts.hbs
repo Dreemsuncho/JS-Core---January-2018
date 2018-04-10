@@ -1,0 +1,23 @@
+{{> header }}
+{{> menu }}
+
+
+<section id="viewMyPosts">
+    <div class="post post-content">
+        <h1>Your Posts</h1>
+    </div>
+
+    <div class="posts">
+        {{#if posts}}
+            {{#each posts }}
+                {{> post }}
+            {{/each}}
+        {{else}}
+        <article class="post">
+            <div class="clear">No posts in database</div>
+        </article>
+        {{/if}}
+    </div>
+</section>
+
+{{> footer }}
